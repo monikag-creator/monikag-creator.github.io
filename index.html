@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monika G – AI/ML Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eaf1f0;--surface:#f6faf9;--ink:#0e2a33;--muted:#4a636b;--line:#c3d3d2;--accent:#0f6b7a;--hot:#d9482b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1c22;--surface:#11282f;--ink:#e6f1f0;--muted:#9bb4b8;--line:#25424a;--accent:#5fc3d1;--hot:#ff8a6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1c22;--surface:#11282f;--ink:#e6f1f0;--muted:#9bb4b8;--line:#25424a;--accent:#5fc3d1;--hot:#ff8a6b;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+header.top b{font:800 20px "Bricolage Grotesque",sans-serif}
+nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(44px,9vw,104px);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.hero p.lead{font-size:clamp(18px,2.4vw,24px);max-width:34ch;margin:22px 0 28px;color:var(--muted)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(28px,4vw,40px);margin-bottom:28px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+.about p{margin:0 0 16px;max-width:62ch}
+dl.facts{margin:0;display:grid;gap:14px;align-content:start}
+dl.facts div{border-left:3px solid var(--accent);padding-left:14px}
+dt{font-size:13px;color:var(--muted)}
+dd{margin:0;font-weight:500}
+.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.skills li{padding:6px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:15px}
+.proj{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:32px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.metric strong{display:block;font:800 clamp(34px,5vw,48px)/1 "Bricolage Grotesque",sans-serif;color:var(--hot);letter-spacing:-.02em}
+.metric span{font-size:13px;color:var(--muted)}
+.proj h3{font-size:24px;margin-bottom:2px}
+.cat{color:var(--muted);font-size:14px;margin:0 0 12px}
+.proj dl{margin:0 0 12px;display:grid;grid-template-columns:90px 1fr;gap:6px 16px}
+.proj dt{font-weight:500;color:var(--ink);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0 0 10px;list-style:none}
+.tags li{font-size:13px;padding:2px 10px;border-radius:4px;background:var(--surface);border:1px solid var(--line);color:var(--muted)}
+.edu{display:grid;gap:0}
+.edu div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.edu div:first-child{border-top:0}
+.edu time{color:var(--muted)}
+.edu b{font-weight:500}
+.contact a{font-size:clamp(20px,3vw,30px);font-family:"Bricolage Grotesque",sans-serif;font-weight:700;display:block;margin-bottom:8px;overflow-wrap:anywhere}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){
+.about,.proj{grid-template-columns:1fr}
+.proj dl{grid-template-columns:78px 1fr}
+.edu div{grid-template-columns:1fr;gap:2px}
+nav a{margin-left:12px}
+.hero{padding-top:48px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><b>Monika G</b><nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<h1>Building practical AI &amp; ML projects.</h1>
+<p class="lead">AI &amp; ML student focused on machine learning, computer vision and deep learning.</p>
+<div class="btns"><a class="btn main" href="#projects">See projects</a><a class="btn" href="https://github.com/monikag-creator" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#contact">Contact</a></div>
+</div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I'm a second-year B.E. CSE (AI &amp; ML) student at Sathyabama Institute of Science and Technology, Chennai, with a CGPA of 9.23. I'm enrolled in the HCL GUVI AIML Program under the IITM Pravartak Certification Track, and I volunteer with the SIST ACM SIGAI Student Chapter.</p>
+<p>My work spans computer vision (object detection, facial recognition, image classification) and time-series forecasting. I like building end-to-end pipelines that go from raw data to a working, demoable product.</p>
+<p>I completed a 45-day AI/ML internship at IICT (Govt. of India), applying ML and data analysis to real-world projects.</p>
+</div>
+<dl class="facts">
+<div><dt>Institution</dt><dd>Sathyabama IST, Chennai</dd></div>
+<div><dt>Focus</dt><dd>Computer Vision, NLP, Deep Learning</dd></div>
+<div><dt>Certification track</dt><dd>HCL GUVI × IITM Pravartak</dd></div>
+<div><dt>Internship</dt><dd>IICT, Govt. of India</dd></div>
+<div><dt>Projects shipped</dt><dd>6+ on GitHub</dd></div>
+</dl>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills &amp; tools</h2>
+<ul class="skills"><li>Python</li><li>Machine Learning</li><li>Deep Learning</li><li>TensorFlow / Keras</li><li>OpenCV</li><li>YOLOv8</li><li>LSTM / RNN</li><li>CNN</li><li>SQL / MySQL</li><li>NLP</li><li>Scikit-learn</li><li>Streamlit</li><li>Git &amp; GitHub</li><li>Google Colab</li><li>Data Visualization</li></ul>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Selected work</h2>
+
+<article class="proj"><div class="metric"><strong>0.82</strong><span>mAP on held-out test set</span></div>
+<div><h3>Tesla Autopilot Clone</h3><p class="cat">Computer Vision</p>
+<dl><dt>Problem</dt><dd>Real-time hazard detection (vehicles, pedestrians, signs) without expensive LiDAR hardware.</dd><dt>Approach</dt><dd>Fine-tuned YOLOv8 on dashcam footage with custom annotations.</dd></dl>
+<ul class="tags"><li>YOLOv8</li><li>OpenCV</li><li>Python</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+
+<article class="proj"><div class="metric"><strong>94%</strong><span>recognition accuracy on test set</span></div>
+<div><h3>Facial Recognition System</h3><p class="cat">Computer Vision</p>
+<dl><dt>Problem</dt><dd>Contactless, on-device biometric authentication without cloud dependency.</dd><dt>Approach</dt><dd>OpenCV + LBPH pipeline with live webcam detection and recognition.</dd></dl>
+<ul class="tags"><li>OpenCV</li><li>LBPH</li><li>Python</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+
+<article class="proj"><div class="metric"><strong>3.2%</strong><span>RMSE, beating a moving-average baseline</span></div>
+<div><h3>LSTM Stock Price Forecasting</h3><p class="cat">Time Series</p>
+<dl><dt>Problem</dt><dd>Retail investors lack accessible, data-driven price forecasting tools.</dd><dt>Approach</dt><dd>Multi-step LSTM model deployed via an interactive Streamlit dashboard.</dd></dl>
+<ul class="tags"><li>LSTM</li><li>TensorFlow</li><li>Streamlit</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+
+<article class="proj"><div class="metric"><strong>91.4%</strong><span>validation accuracy</span></div>
+<div><h3>Landmark Recognition System</h3><p class="cat">Computer Vision</p>
+<dl><dt>Problem</dt><dd>Tourists can't easily identify monuments or landmarks from photos.</dd><dt>Approach</dt><dd>Fine-tuned MobileNetV2 with data augmentation on a 10-class dataset.</dd></dl>
+<ul class="tags"><li>CNN</li><li>Transfer Learning</li><li>Keras</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+
+<article class="proj"><div class="metric"><strong>R² 0.969</strong><span>RMSE ₹1.22 lakh</span></div>
+<div><h3>Car Price Prediction</h3><p class="cat">Regression</p>
+<dl><dt>Problem</dt><dd>No reliable way for buyers and sellers to estimate fair used-car prices.</dd><dt>Approach</dt><dd>Gradient Boosting with engineered features (car age, km/year, power ratio). It outperformed Linear Regression and Random Forest.</dd></dl>
+<ul class="tags"><li>Gradient Boosting</li><li>Scikit-learn</li><li>Feature Engineering</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+
+<article class="proj"><div class="metric"><strong>Full</strong><span>transaction history</span></div>
+<div><h3>Expense Sharing App</h3><p class="cat">Application</p>
+<dl><dt>Problem</dt><dd>Manual expense splitting among groups leads to confusion and disputes.</dd><dt>Approach</dt><dd>CLI tool with equal and custom splits and real-time balance tracking, with PrettyTable-formatted output.</dd></dl>
+<ul class="tags"><li>Python</li><li>CLI</li><li>Data Structures</li></ul><a href="https://github.com/monikag-creator" target="_blank" rel="noopener">View code on GitHub</a></div></article>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education &amp; certificates</h2>
+<div class="edu">
+<div><time>2025 – 2029</time><span><b>B.E. CSE – Artificial Intelligence &amp; Machine Learning</b><br>Sathyabama Institute of Science and Technology, Chennai. CGPA 9.23</span></div>
+<div><time>Enrolled</time><span><b>HCL GUVI AIML Program</b><br>IITM Pravartak Certification Track</span></div>
+<div><time>May 2026</time><span><b>AI &amp; Machine Learning Certification</b><br>GUVI × HCL</span></div>
+<div><time>Dec 2025</time><span><b>Canva Essentials</b><br>Canva Design School</span></div>
+<div><time>2026</time><span><b>Certificate of Appreciation</b><br>SIST ACM SIGAI Student Chapter, Volunteering Unit Member</span></div>
+<div><time>Jun 2026</time><span><b>Featured: Mastering MySQL in Tamil</b><br>GUVI × HCL, Certificate of Completion (issued June 13, 2026)</span></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2>Contact</h2>
+<a href="mailto:monikagoutam.0811@gmail.com">monikagoutam.0811@gmail.com</a>
+<a href="https://www.linkedin.com/in/monika-g-4a2904388" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://github.com/monikag-creator" target="_blank" rel="noopener">GitHub</a>
+</div></section>
+
+<footer><div class="wrap">Monika G · Chennai, India</div></footer>
+</body>
+</html>
